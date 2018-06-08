@@ -1,8 +1,13 @@
 <header class="mdc-top-app-bar">
   <div class="mdc-top-app-bar__row">
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-      <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
-      <span class="mdc-top-app-bar__title">Title</span>
+      <a href="" class="mdc-top-app-bar__navigation-icon"><i class="zmdi zmdi-font"></i></a>
+    </section>
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+        <a routerLink="/login" class="mdc-top-app-bar__navigation-icon" *ngIf="!loggedIn">Login</a>
+        <a routerLink="/signup" class="mdc-top-app-bar__navigation-icon" *ngIf="!loggedIn">Signup</a>
+        <a href="#" (click)="logout($event)" class="mdc-top-app-bar__navigation-icon" *ngIf="loggedIn">Logout</a>
+        <a routerLink="/profile" class="mdc-top-app-bar__navigation-icon" *ngIf="loggedIn">Profile</a>
     </section>
   </div>
 </header>

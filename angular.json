@@ -24,6 +24,9 @@
             ],
             "styles": [
               "./node_modules/material-components-web/dist/material-components-web.min.css",
+              "./src/assets/css/linearicons.css", 
+              "./src/assets/css/iconic/css/material-design-iconic-font.min.css", 
+              "./src/assets/css/util.css", 
               "./src/styles.css"
             ],
             "scripts": [
