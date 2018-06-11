@@ -1,20 +1,21 @@
-<nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
-  <div class="uk-navbar-right">
+<nav class="uk-navbar-container d-navbar" uk-navbar>
+	<div class="uk-navbar-left">
+		<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+		<a href="" class="logo"><i uk-icon="play-circle"></i> Naija Poll</a>
+		<ul class="uk-navbar-nav ml-2">
+			<li><a class="darker" href="#">Videos</a></li>
+			<li><a class="darker" href="#">Challenges</a></li>
+			<li><a class="darker" href="#">Showcase</a></li>
+			<li><a class="darker primary-color" href="#">Polls</a></li>
+		</ul>
+	</div>
+  	<div class="uk-navbar-right">
 
-      <ul class="uk-navbar-nav">
-          <li class="uk-active"><a href="#">Active</a></li>
-          <li>
-              <a href="#">Parent</a>
-              <div class="uk-navbar-dropdown">
-                  <ul class="uk-nav uk-navbar-dropdown-nav">
-                      <li class="uk-active"><a href="#">Active</a></li>
-                      <li><a routerLink="login">Login</a></li>
-                      <li><a href="#">Item</a></li>
-                  </ul>
-              </div>
-          </li>
-          <li><a href="#">Item</a></li>
-      </ul>
+      	<ul class="uk-navbar-nav">
+			<li><a href="#"><span uk-icon="plus-circle"></span></a></li>
+			<li><a href="#"><span uk-icon="bell"></span></a></li>
+			<li><a routerLink="/login">Login</a></li>
+      	</ul>
 
-  </div>
+  	</div>
 </nav>

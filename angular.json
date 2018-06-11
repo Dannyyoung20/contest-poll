@@ -23,8 +23,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/material-components-web/dist/material-components-web.min.css",
-              "./src/assets/css/linearicons.css", 
               "./src/assets/css/iconic/css/material-design-iconic-font.min.css", 
               "./src/assets/css/util.css", 
               "./src/styles.css"
@@ -32,6 +30,7 @@
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/uikit/dist/js/uikit.min.js",
+              "./node_modules/uikit/dist/js/uikit-icons.min.js",
               "src/assets/js/main.js"
             ]
           },

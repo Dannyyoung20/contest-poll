@@ -7,13 +7,16 @@ import { baseApiUrl } from '../../general/baseUrl';
 export class TokenService {
 
   private iss = {
-    login: baseApiUrl + '/login',
-    signup: baseApiUrl + '/signup'
+    login: baseApiUrl + '/auth/login',
+    signup: baseApiUrl + '/auth/signup'
   };
 
   constructor() {}
 
   handle(token) {
+    if (token === '') {
+      return;
+    }
     this.setToken(token);
   }
 
@@ -30,6 +33,7 @@ export class TokenService {
   }
 
   decodePayload(payload) {
+    console.log(payload);
     return JSON.parse(atob(payload));
   }
 

@@ -14,7 +14,7 @@ export class AuthService {
               private token: TokenService) {}
 
   login(credentials) {
-    return this.http.post('api/login', JSON.stringify(credentials));
+    return this.http.post('api/auth/login', credentials);
   }
 
   signup(credentials) {
